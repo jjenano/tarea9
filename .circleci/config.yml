@@ -67,6 +67,7 @@ workflows:
           requires:
             - node-build
       - docker-build-and-push:
+          type: approval
           requires:
             - node-test
           filters:
