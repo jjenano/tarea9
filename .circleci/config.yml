@@ -36,6 +36,7 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check
+      - ls
       - docker/build:
           image: jjenano/tarea9
           tag: "latest,$CIRCLE_SHA1"
