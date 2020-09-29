@@ -5,6 +5,6 @@ module.exports = {
     }
   },
   moduleFileExtensions: ['js'],
-  testResultsProcessor: 'jest-sonar-reporter',
+  testResultsProcessor: 'jest-junit',
   testMatch: ['<rootDir>/__test__/**/*.test.js']
 }

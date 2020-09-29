@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.2",
+    "jest-junit": "^11.1.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
   },
