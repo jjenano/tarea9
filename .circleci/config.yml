@@ -66,9 +66,9 @@ workflows:
       - node-test:
           requires:
             - node-build
-  docker-aws:
-    jobs:
       - docker-build-and-push:
+          requires:
+            - node-test
           filters:
             branches:
               only:
@@ -80,5 +80,3 @@ workflows:
             branches:
               only:
                 - master
-    requires:
-      - standard-node
