@@ -15,8 +15,6 @@ app.use(bodyParser.urlencoded({
   extended: false
 }))
 app.use(bodyParser.json())
-var path = require('path')
-app.use(express.static(path.join(__dirname, './public')))
 /**
  *
  * Description. (peticion inicial)
