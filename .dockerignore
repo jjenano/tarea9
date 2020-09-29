@@ -1,0 +1,9 @@
+__test__
+.circleci
+coverage
+reports\junit
+.gitignore
+jest.config.jest
+README.md
+sona
+node_modules
