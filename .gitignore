@@ -1,0 +1,6 @@
+.scannerwork
+coverage
+node_modules
+test-report.xml
+services/logs
+dist
