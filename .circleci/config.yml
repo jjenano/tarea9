@@ -54,7 +54,7 @@ jobs:
       - run:
           name: Deploy
           command: |
-            ecs deploy $ECS_CLUSTER_NAME $ECS_SERVICE --image website-service trambocloud/nginx:$CIRCLE_SHA1 --timeout 1200 --ignore-warnings --region $AWS_REGION
+            ecs deploy $ECS_CLUSTER_NAME $ECS_SERVICE --image website-service jjenano/tarea9:$CIRCLE_SHA1 --timeout 1200 --ignore-warnings --region $AWS_REGION
 orbs:
   docker: circleci/docker@1.4.0
 workflows:
