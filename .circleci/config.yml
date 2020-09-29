@@ -36,8 +36,11 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check
+      - run:
+          name: muestra
+          command: |
+            ls
       - docker/build:
-          name: docker Build
           image: jjenano/tarea9
           tag: "latest,$CIRCLE_SHA1"
       - docker/push:
