@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
     message: 'peticion inicial'
   })
   res.statusCode = 200
-  res.end('Hello world')
+  res.end('Bye world')
 })
 
 module.exports = app

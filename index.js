@@ -1,7 +1,7 @@
 // server.js
 const app = require('./app')
 const { logger } = require('./services/logger')
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 80
 
 app.listen(port, () => {
   var mesg = `Servidor Iniciado en el puerto ${port}`

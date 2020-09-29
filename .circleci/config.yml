@@ -80,7 +80,6 @@ workflows:
               only:
                 - master
       - aws-deploy:
-          type: approval
           requires:
             - docker-build-and-push
           filters:
