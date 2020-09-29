@@ -67,7 +67,6 @@ workflows:
           requires:
             - node-build
       - docker-build-and-push:
-          type: approval
           requires:
             - node-test
           filters:
@@ -75,6 +74,7 @@ workflows:
               only:
                 - master
       - aws-deploy:
+          type: approval
           requires:
             - docker-build-and-push
           filters:
