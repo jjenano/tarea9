@@ -24,6 +24,9 @@ jobs:
           name: pruebas
           command: |
             npm test
+      - run:
+          name: consola
+          command: cat junit.xml
       - store_test_results:
           path: junit.xml
 
