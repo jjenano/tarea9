@@ -32,23 +32,16 @@ jobs:
 
   docker-build-and-push:
     executor: docker/docker
-    steps:
-      - setup_remote_docker
-      - checkout
-      - docker/check
-      - run:
-          name: muestra
-          command: |
-            ls
-      - docker/build:
-          image: jjenano/tarea9
-          tag: "latest,$CIRCLE_SHA1"
-      - docker/push:
-          image: jjenano/tarea9
-          tag: "latest,$CIRCLE_SHA1"
-      - run:
-          command: |
-            echo "Digest is: $(</tmp/digest.txt)"
+      steps:
+        - setup_remote_docker
+        - checkout
+        - docker/check
+        - docker/build:
+            image: jjenano/tarea9
+            tag: "latest,$CIRCLE_SHA1"
+        - docker/push:
+            image: jjenano/tarea9
+            tag: "latest,$CIRCLE_SHA1"
   aws-deploy:
     docker:
       - image: circleci/python:3.7
