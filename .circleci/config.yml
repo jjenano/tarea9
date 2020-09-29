@@ -24,13 +24,11 @@ jobs:
           name: pruebas
           command: |
             npm test
-          environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - run:
           name: consola
-          command: cat junit.xml
+          command: cat ./reports/junit/junit.xml
       - store_test_results:
-          path: ./reports/junit/
+          path: ./reports/junit
 
   docker-build-and-push:
     executor: docker/docker
