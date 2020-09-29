@@ -31,8 +31,6 @@ jobs:
           command: cat junit.xml
       - store_test_results:
           path: ./reports/junit/
-      - store_artifacts:
-          path: ./reports/junit
 
   docker-build-and-push:
     executor: docker/docker
