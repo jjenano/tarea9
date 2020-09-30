@@ -1,0 +1,28 @@
+.contenedorBlockly{
+    height: 500px;
+    width: 698px;
+    position: fixed;
+    top: 10px;
+    right: 500px;
+    border: 10px;
+}
+
+.runcql {
+    font-size: 12px;
+	margin: 20px;
+	color: rgb(57, 25, 199);
+	position: fixed;
+	top: 405px;
+    right: 570px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenedorcode{
+    height: 0px;
+    width: 400px;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    border: 0px;
+}
