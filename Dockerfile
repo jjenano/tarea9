@@ -8,4 +8,4 @@ COPY --from=build-env /app /app
 COPY --from=build-env /app/public/ /public/
 WORKDIR /app
 EXPOSE 80
-CMD [ "node", "index.js" ]
+CMD ["index.js"]
